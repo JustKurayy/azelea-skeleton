@@ -7,8 +7,8 @@
     </head>
     <body>
         <?php 
-        $form = new LoginForm();
-        $form->show();
-       ?>
+            $form = new LoginForm();
+            $form->show();
+        ?>
     </body>
 </html>
