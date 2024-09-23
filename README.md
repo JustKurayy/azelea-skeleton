@@ -1,8 +1,4 @@
-Azelea test app
-
-===================================
-
-
+# Azelea test app
 
 ### What is this repo?
 
