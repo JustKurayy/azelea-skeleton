@@ -10,8 +10,6 @@
 <body>
     <?php 
     $form->show("d-flex flex-column w-25");
-    echo "<br>";
-    $form2->show("d-flex flex-column w-25");
     ?>
 </body>
 </html>

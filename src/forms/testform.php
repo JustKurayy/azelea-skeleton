@@ -1,7 +1,7 @@
 <?php
 
 class TestForm extends Forms {
-    public function __construct() {
+    public function init() {
         $form = [
             "testinput" => [
                 "type" => "text",

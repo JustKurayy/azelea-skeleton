@@ -1,7 +1,5 @@
 <?php
-/**
- * For testing the DB manager
- */
+
 class Persons {
     private int $id;
     private string $lastname;
@@ -20,5 +18,32 @@ class Persons {
 
     public function getLastname(): string {
         return $this->lastname;
+    }
+
+    public function setFirstname($firstname): static {
+        $this->firstname = $firstname;
+        return $this;
+    }
+
+    public function getFirstname(): string {
+        return $this->firstname;
+    }
+
+    public function setAddress($address): static {
+        $this->address = $address;
+        return $this;
+    }
+
+    public function getAddress(): string {
+        return $this->address;
+    }
+
+    public function setCity($city): static {
+        $this->city = $city;
+        return $this;
+    }
+
+    public function getCity(): string {
+        return $this->city;
     }
 }

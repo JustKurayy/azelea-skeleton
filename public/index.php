@@ -17,5 +17,11 @@ foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator(realpath('
     }
 }
 
+foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator(realpath('../src/models'))) as $filename) {
+    if (str_contains($filename, ".php")) {
+        include $filename;
+    }
+}
+
 include "../src/routes.php";
 $routes = new Routes();

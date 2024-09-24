@@ -1,22 +1,22 @@
 <?php
 
 class HomeController extends Controller {
-    public function home($dm = new DatabaseManager,) {
-        $form = new LoginForm();
-        $form2 = new TestForm();
+    public function home($db = new DatabaseManager,) {
+        $person = new Persons();
+        $form = $this->buildForm(LoginForm::class, $person);
 
         if ($form->submitForm()) {
-            echo "form1!";
-            $this->routeToUri("/");
-        }
-
-        if ($form2->submitForm()) {
-            echo "form2!";
+            $person->setLastname($form->getData("test"));
+            $person->setFirstname("J.");
+            $person->setAddress("M.2");
+            $person->setCity("Chicago");
+            $db->parse($person);
+            $db->push();
+            //$this->routeToUri("/");
         }
 
         $this->render("home.php", [
             'form' => $form,
-            'form2' => $form2,
         ]);
     }
 }
