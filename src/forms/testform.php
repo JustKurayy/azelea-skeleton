@@ -1,7 +1,8 @@
 <?php
+namespace Azelea\Core;
 
 class TestForm extends Forms {
-    public function init() {
+    public function __construct() {
         $form = [
             "testinput" => [
                 "type" => "text",

@@ -1,7 +1,9 @@
 vendor
-vendor/
+vendor/*
 /vendor
-/vendor/
+/vendor/*
 
 .env.local
 /.env.local
+
+migrations/

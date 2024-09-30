@@ -1,4 +1,5 @@
 <?php
+namespace Azelea\Core;
 
 class Persons {
     private int $id;

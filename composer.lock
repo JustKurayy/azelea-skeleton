@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d940edb20d9e46661db9a793dc59479b",
+    "content-hash": "35838fcc0cae2a560a459b8e8dd5e3e6",
     "packages": [
         {
             "name": "azelea/core",
-            "version": "v1.0.8",
+            "version": "V1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JustKurayy/azelea-core.git",
-                "reference": "78abab36e99e0f663dfe2a75370e5ec3bc043807"
+                "reference": "0e9f504a7dc69dfc80f1997b31b6b40ce1355f9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JustKurayy/azelea-core/zipball/78abab36e99e0f663dfe2a75370e5ec3bc043807",
-                "reference": "78abab36e99e0f663dfe2a75370e5ec3bc043807",
+                "url": "https://api.github.com/repos/JustKurayy/azelea-core/zipball/0e9f504a7dc69dfc80f1997b31b6b40ce1355f9a",
+                "reference": "0e9f504a7dc69dfc80f1997b31b6b40ce1355f9a",
                 "shasum": ""
             },
             "type": "library",
@@ -38,9 +38,9 @@
             "description": "The core for the azelea php lightweight framework",
             "support": {
                 "issues": "https://github.com/JustKurayy/azelea-core/issues",
-                "source": "https://github.com/JustKurayy/azelea-core/tree/v1.0.8"
+                "source": "https://github.com/JustKurayy/azelea-core/tree/V1.0.2"
             },
-            "time": "2024-09-23T13:55:41+00:00"
+            "time": "2024-09-26T10:18:26+00:00"
         },
         {
             "name": "graham-campbell/result-type",
