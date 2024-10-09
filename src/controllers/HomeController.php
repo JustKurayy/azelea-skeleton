@@ -16,6 +16,9 @@ class HomeController extends Controller {
             return $this->routeToUri("/");
         }
 
+        $personf = $db->getModel(Persons::class, 28);
+        Core::dd($personf);
+
         return $this->render("home.php", [
             'form' => $form,
         ]);
