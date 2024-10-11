@@ -16,11 +16,13 @@ class HomeController extends Controller {
             return $this->routeToUri("/");
         }
 
-        $personf = $db->getModel(Persons::class, 28);
-        Core::dd($personf);
+        //$personf = $db->getModel(Persons::class, 28);
+        //Core::dd($form);
 
-        return $this->render("home.php", [
+        return $this->render("home.loom.php", [
             'form' => $form,
+            'items' => ["1", "2", "2"]
+            // 'test' => 'hello world!'
         ]);
     }
 }

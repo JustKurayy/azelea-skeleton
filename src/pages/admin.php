@@ -9,5 +9,8 @@
 <body>
     <h1>admin</h1>
     <script src="assets/js/script.js"></script>
+    <?php
+        $form->show("flex flex-col");
+        ?>
 </body>
 </html>
