@@ -22,7 +22,6 @@ class HomeController extends Controller {
         return $this->render("home.loom.php", [
             'form' => $form,
             'items' => ["1", "2", "2"]
-            // 'test' => 'hello world!'
         ]);
     }
 }

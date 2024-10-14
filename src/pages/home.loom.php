@@ -14,7 +14,7 @@
     @foreach ($items as $item)
         <p>Item: @yield('item ', $item)</p>
     @endforeach
-    <h1>Numbers List</h1>
+    <h1>@lang('number')</h1>
     @for ($i = 0; $i < 5; $i++)
         <p>Number: @yield($i)</p>
     @endfor
