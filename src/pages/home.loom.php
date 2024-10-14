@@ -18,6 +18,9 @@
     @for ($i = 0; $i < 5; $i++)
         <p>Number: @yield($i)</p>
     @endfor
+    @if (true)
+        <p>if = true</p>
+    @endif
     <div class="login-container flex justify-center items-center">
         @class('form')->show("flex flex-col")
     </div>

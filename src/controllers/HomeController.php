@@ -1,23 +1,23 @@
 <?php
 namespace Azelea\Core;
+use Azelea\Core\Standard\Controller;
+use Azelea\Core\Database\DatabaseManager;
 
 class HomeController extends Controller {
     public function home($db = new DatabaseManager) {
-        $person = new Persons();
-        $form = $this->buildForm(LoginForm::class, $person);
+        $user = new Users();
+        $form = $this->buildForm(LoginForm::class);
 
         if ($form->submitForm()) {
-            $person->setLastname($form->getData("lname"));
-            $person->setFirstname($form->getData("fname"));
-            $person->setAddress($form->getData("address"));
-            $person->setCity($form->getData("city"));
-            $db->parse($person);
+            $user->setEmail($form->getData("email"));
+            //$user->setFirstname($form->getData("password"));
+            $db->parse($user);
             $db->push();
             return $this->routeToUri("/");
         }
 
-        //$personf = $db->getModel(Persons::class, 28);
-        //Core::dd($form);
+        $personf = $db->getModel(Users::class, 1);
+        Core::dd($personf);
 
         return $this->render("home.loom.php", [
             'form' => $form,

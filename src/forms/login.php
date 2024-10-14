@@ -4,40 +4,21 @@ namespace Azelea\Core;
 class LoginForm extends Forms {
     public function init() {
         $form = [
-            "testinput" => [
-                "type" => "text",
-                "name" => "lname",
+            "email" => [
+                "type" => "email",
+                "name" => "email",
                 "classes" => "mb-2",
                 "options" => [
-                    "label" => true,
                     "wrapped" => "hello", //needs to be implemented. wraps the field in a div
                     "required" => true,
                 ],
             ],
-            "fnameinput" => [
-                "type" => "text",
-                "name" => "fname",
+            "password" => [
+                "type" => "password",
+                "name" => "password",
                 "classes" => "mb-2",
                 "options" => [
-                    
-                ]
-            ],
-            "addressinput" => [
-                "type" => "text",
-                "name" => "address",
-                "classes" => "mb-2",
-                "options" => [
-                    "label" => true,
-                    "required" => true
-                ]
-            ],
-            "cityinput" => [
-                "type" => "text",
-                "name" => "city",
-                "classes" => "mb-2",
-                "options" => [
-                    "label" => true,
-                    "required" => true
+                    "required" => true,
                 ]
             ],
             "submitbtn" => [

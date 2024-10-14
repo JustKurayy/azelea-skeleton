@@ -1,5 +1,6 @@
 <?php
 namespace Azelea\Core;
+use Azelea\Core\Standard\Controller;
 
 class ApiController extends Controller {
     public function v1intro() {
