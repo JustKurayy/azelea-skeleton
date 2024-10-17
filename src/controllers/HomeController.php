@@ -13,6 +13,7 @@ class HomeController extends Controller {
         if ($form->submitForm()) {
             $user->setEmail($form->getData("email"));
             $user->setPassword($form->getData("password"));
+            $user->setUsername('testuser');
             $db->parse($user);
             $db->push();
             return $this->routeToUri("/");

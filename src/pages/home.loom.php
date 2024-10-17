@@ -20,9 +20,7 @@
     @if (true)
         <p>if = true</p>
     @endif
-    @for ($i = 0; $i < 2; $i++)
-        <div class="@flashes('type', $i)">@flashes('message', $i)</div>
-    @endfor
+    @flashes('m')
     <div class="login-container flex justify-center items-center">
         @class('form')->show("flex flex-col")
     </div>
