@@ -8,7 +8,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="@asset('css/style.css')">
 </head>
-
 <body>
     <h1>Items List</h1>
     @foreach ($items as $item)
@@ -21,6 +20,9 @@
     @if (true)
         <p>if = true</p>
     @endif
+    @for ($i = 0; $i < 2; $i++)
+        <div class="@flashes('type', $i)">@flashes('message', $i)</div>
+    @endfor
     <div class="login-container flex justify-center items-center">
         @class('form')->show("flex flex-col")
     </div>
