@@ -5,8 +5,6 @@ use Azelea\Core\Database\DatabaseManager;
 
 class HomeController extends Controller {
     public function home($db = new DatabaseManager) {
-        $this->addFlash("hi", "success");
-        $this->addFlash("NO", "danger");
         $user = new Users();
         $form = $this->buildForm(LoginForm::class);
 
