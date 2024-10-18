@@ -10,8 +10,9 @@ class SecurityController extends Controller {
 
         if ($form->submitForm()) {
             $this->addFlash('hi', 'success');
-            $db->login(Users::class, $form);
-            return $this->routeToUri("/");
+            $user = $db->login(Users::class, $form);
+            Core::dd($user);
+            // return $this->routeToUri("/");
         }
 
         $this->render("login.loom.php", [

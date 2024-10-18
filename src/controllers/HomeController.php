@@ -4,7 +4,7 @@ use Azelea\Core\Standard\Controller;
 use Azelea\Core\Database\DatabaseManager;
 
 class HomeController extends Controller {
-    public function home($db = new DatabaseManager) {
+    public function home(DatabaseManager $db) {
         $user = new Users();
         $form = $this->buildForm(LoginForm::class);
 
@@ -17,8 +17,8 @@ class HomeController extends Controller {
             return $this->routeToUri("/");
         }
 
-        // $personf = $db->getModel(Users::class, 1);
-        // Core::dd($personf);
+        $personf = $db->getModel(Persons::class, 28);
+        Core::dd($personf);
 
         return $this->render("home.loom.php", [
             'form' => $form,
