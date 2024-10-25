@@ -10,7 +10,7 @@ class LoginForm extends Forms {
                 "classes" => "mb-2",
                 "options" => [
                     "wrapped" => "hello", //needs to be implemented. wraps the field in a div
-                    "required" => true,
+                    "required" => false,
                 ],
             ],
             "password" => [
@@ -18,7 +18,7 @@ class LoginForm extends Forms {
                 "name" => "password",
                 "classes" => "mb-2",
                 "options" => [
-                    "required" => true,
+                    "required" => false,
                 ]
             ],
             "submitbtn" => [

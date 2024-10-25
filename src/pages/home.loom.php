@@ -20,8 +20,8 @@
     @if (true)
         <p>if = true</p>
     @endif
-    @flashes('m')
     <div class="login-container flex justify-center items-center">
+        @flashes('m')
         @class('form')->show("flex flex-col")
     </div>
     <script src="@asset('js/script.js')"></script>

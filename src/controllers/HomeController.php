@@ -18,11 +18,16 @@ class HomeController extends Controller {
         }
 
         // $personf = $db->getModel(Persons::class, 28);
-        // Core::dd($personf);
+        // Core::dd(["1", "2", [0, 1, "person" => $personf]]);
 
         return $this->render("home.loom.php", [
             'form' => $form,
-            'items' => ["1", "2", "2"]
+            'items' => ["1", "2", "3"]
         ]);
+    }
+
+    public function href(DatabaseManager $db, $id) {
+        $personf = $db->getModel(Persons::class, $id);
+        Core::dd($personf);
     }
 }
